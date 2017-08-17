@@ -1,7 +1,7 @@
 #########################################################################################
 ##                                                                                     ##
-## s04_gse59901brc.R                                                                  ##
-## Script para la anotaciónn de las DMRs, pondremos los genes a los que apuntan por    ##
+## s04_gse59901brc.R                                                                   ##
+## Script para la anotación de las DMRs, pondremos los genes a los que apuntan por     ##
 ## el método del promedio y del valor absoluto. Además, prepararemos el input para el  ##
 ## análisis de enriquecimiento funcional.                                              ##
 ## Autor: Antonio Manuel Trassierra Fresco                                             ##
