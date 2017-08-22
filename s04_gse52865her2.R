@@ -67,7 +67,7 @@ genestotales <- genestotales[ind2,]
 table(genestotales$genes %in% dataprom$genes)
 
 final <- rbind(genestotales, b) # Juntamos todos los genes
-final <- final[order(final$value),] # Ordenamos de mayor a menor nivel de metilación diferencial
+final <- final[order(-final$value),] # Ordenamos de mayor a menor nivel de metilación diferencial
 write.table(x = final, file = "genes52865her2prom.txt", row.names = FALSE, sep = "\t", quote = FALSE) # Input con el promedio para GSA
 
 # Valor absoluto
