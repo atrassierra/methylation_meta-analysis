@@ -19,7 +19,7 @@ data <- readGEORawFile("tablebrc_norm.txt", sep = "\t", Uname = "Signal_A", Mnam
 
 grs <- ratioConvert(data) # Calculamos el estadístico beta con el que se computan las dmrs
 
-g <- as.factor(c(rep("c", 4), rep("brc", 8))) # Especificamos los controles y los casos
+g <- as.factor(c(rep("c", 4), rep("enfermo", 8))) # Especificamos los controles y los casos
 
 matriz <- model.matrix(~ g) # Construimos la matriz de diseño experimental
 
