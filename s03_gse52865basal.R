@@ -19,7 +19,7 @@ data <- readGEORawFile("gse52865basal_norm.txt", sep = "\t", Uname = "unmeth", M
 
 grs <- ratioConvert(data) # Calculamos el estadístico beta con el que se computan las dmrs
 
-g <- as.factor(c(rep("c", 17), rep("basal", 14))) # Especificamos los controles y los casos
+g <- as.factor(c(rep("c", 17), rep("enfermo", 14))) # Especificamos los controles y los casos
 
 matriz <- model.matrix(~ g) # Construimos la matriz de diseño experimental
 
